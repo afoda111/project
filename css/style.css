@@ -17,3 +17,11 @@ form {
 #description{
     text-align:center;
 }
+
+.block {
+    display: block;
+}
+
+#comment-suggestion {
+    min-width: 100%;
+}

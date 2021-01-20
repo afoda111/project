@@ -12,12 +12,13 @@
     <form action="" id="survey-form">
       <label for="name" id="name-label">Name</label>
       <input type="text" id="name" placeholder="Enter your name">
-      
+
       <label for="email" id="email-label">Email</label>
       <input type="email" id="email" placeholder="Enter your email address">
 
       <label for="number" id="number-label">Age</label>
       <input type="number" id="number" name="number" min="10" max="100">
+
       <label for="dropdown">which is your favorite sandwich?</label>
       <select id="dropdown" name="dropdown">
         <option disabled selected value> select sandwich</option> 
@@ -26,12 +27,35 @@
         <option value="double_cheese_burger"> double cheeseburger</option>
         <option value="Spicy_BBQ_Chicken_Sandwich">Spicy BBQ Chicken Sandwicha</option>
       </select>
-      <p>would you recommend mcdonald for a friend?</p>
-      <label for="definitely">Definitely</label> 
-      <input type="radio" name="recommend" id="definitely" value="definitely">
-      <label for="maybe"> Maybe</label>
-      <input type="radio" name="recommend" id="maybe" value="maybe">
+
+      <div class="block">
+        <p>would you recommend mcdonald for a friend?</p>
+        <input type="radio" name="recommend" id="definitely" value="definitely">
+        <label for="definitely">Definitely</label></br>
+        <input type="radio" name="recommend" id="maybe" value="maybe">
+        <label for="maybe"> Maybe</label></br>
+      </div>
       
+      <div class="block">
+        <p>What would you like us to improve? <span class="hint">(Check all that apply)</span></p>
+        <input type="checkbox" name="improve" id="customer_service" value="customer_service">
+        <label for="customer_service">Customer Service</label></br>
+        <input type="checkbox" name="improve" id="drinks" value="drinks">
+        <label for="drinks">Drinks</label></br>
+        <input type="checkbox" name="improve" id="fries" value="fries">
+        <label for="fries">Fries</label></br>
+        <input type="checkbox" name="improve" id="deserts" value="deserts">
+        <label for="deserts">Deserts</label></br>
+        <input type="checkbox" name="improve" id="burgers" value="burgers">
+        <label for="burgers">Burgers</label></br>
+        <input type="checkbox" name="improve" id="takeaway" value="takeaway">
+        <label for="takeaway">Takeway</label></br>
+        <input type="checkbox" name="improve" id="delivery" value="delivery">
+        <label for="delivery">Delivery</label></br>
+      </div>
+
+      <p>Any comments or suggestions?</p>
+      <textarea id="comment-suggestion" placeholder="Enter your comment here..."></textarea>
       
     </form>
     <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
